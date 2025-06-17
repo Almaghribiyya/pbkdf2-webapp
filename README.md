@@ -8,6 +8,11 @@
 
 A modern web-based encryption toolkit powered by PBKDF2 (Password-Based Key Derivation Function 2), featuring secure password hashing, cryptographic salt generation, and user-friendly interface for data encryption and decryption. Built with modern web technologies and featuring a beautiful glass-morphism design.
 
+## 🎥 Screenshots
+![Screenshot 2025-06-17 220234](https://github.com/user-attachments/assets/7f72d4ec-d569-4f35-bf38-04c0139182b1)
+
+
+
 ## ✨ Features
 
 ### 🔒 Advanced Encryption
