@@ -13,64 +13,51 @@ A modern web-based encryption toolkit powered by PBKDF2 (Password-Based Key Deri
 ### 🔒 Advanced Encryption
 
 - PBKDF2 implementation with 100,000 iterations
+  
 - Cryptographic salt generation
+  
 - Secure key derivation
+  
 - XOR-based encryption/decryption
-
-### 🎨 Modern UI/UX
-
-- Glass-morphism design
-- Responsive layout
-- Animated transitions
-- Dark mode interface
 
 ### 🛡️ Security Features
 
 - Password confirmation
+  
 - Secure password input fields
+  
 - Copy-to-clipboard functionality
+  
 - Clear form options
 
-### 🌈 Visual Elements
-
-- Aurora background effect
-- Interactive cards
-- Loading animations
-- Intuitive icons
 
 ## ⚙️ Installation
 
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/pbkdf2-cryptosuite.git
+## 🚀 Usage
 
-Navigate to project directory
-Install dependencies
-Start the development server
-🚀 Usage
-Launch the application
-Choose between encryption or decryption
-For encryption:
-Enter your message
-Set a secure password
-Confirm your password
-Click "Encrypt Message"
-For decryption:
-Paste the ciphertext
-Enter the correct password
-Confirm your password
-Click "Decrypt Message"
-🤝 Contributing
-Fork the project
-Create your feature branch (git checkout -b feature/AmazingFeature)
-Commit your changes (git commit -m 'Add some AmazingFeature')
-Push to the branch (git push origin feature/AmazingFeature)
-Open a Pull Request
-🔍 Technical Details
-Uses Web Crypto API for secure random number generation
-Implements PBKDF2 with SHA-256
-Features URL-safe Base64 encoding
-Employs modern ES6+ JavaScript
-Responsive Tailwind CSS design
-Custom animations and transitions
+1. Launch the application
+   
+2. Choose between encryption or decryption
+#### For encryption:
+  
+1. Enter your message
+
+2. Set a secure password
+
+3. Confirm your password
+
+4. Click "Encrypt Message"
+
+#### For decryption:
+  
+1. Paste the ciphertext
+
+2. Enter the correct password
+
+3. Confirm your password
+
+4. Click "Decrypt Message"
+
+## 🔐 Links :  https://pbkdf2-webapp.vercel.app/
+
 Built with ❤️ by Muhammad Rezka Al Maghribi
