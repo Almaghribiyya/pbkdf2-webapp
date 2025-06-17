@@ -1,4 +1,4 @@
-# 🔐 PBKDF2 CryptoSuite
+ 🔐 PBKDF2 CryptoSuite
 
 ## 🛠️ Technologies Used
 
