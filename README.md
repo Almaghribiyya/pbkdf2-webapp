@@ -30,14 +30,12 @@ A modern web-based encryption toolkit powered by PBKDF2 (Password-Based Key Deri
   
 - Clear form options
 
-
-## ⚙️ Installation
-
 ## 🚀 Usage
 
 1. Launch the application
    
 2. Choose between encryption or decryption
+   
 #### For encryption:
   
 1. Enter your message
@@ -60,4 +58,4 @@ A modern web-based encryption toolkit powered by PBKDF2 (Password-Based Key Deri
 
 ## 🔐 Links :  https://pbkdf2-webapp.vercel.app/
 
-Built with ❤️ by Muhammad Rezka Al Maghribi
+## Built with ❤️ by Muhammad Rezka Al Maghribi
