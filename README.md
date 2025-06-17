@@ -36,7 +36,7 @@ A modern web-based encryption toolkit powered by PBKDF2 (Password-Based Key Deri
    
 2. Choose between encryption or decryption
    
-#### For encryption:
+#### - For encryption:
   
 1. Enter your message
 
@@ -46,7 +46,7 @@ A modern web-based encryption toolkit powered by PBKDF2 (Password-Based Key Deri
 
 4. Click "Encrypt Message"
 
-#### For decryption:
+#### - For decryption:
   
 1. Paste the ciphertext
 
