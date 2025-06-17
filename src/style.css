@@ -1,0 +1,237 @@
+/* Menggunakan font dari Google Fonts */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-mono {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Animasi Fade-in */
+@keyframes fade-in-down {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.animate-fade-in-down { animation: fade-in-down 0.8s ease-out forwards; }
+.animate-fade-in-up { animation: fade-in-up 0.8s ease-out 0.2s forwards; opacity: 0; }
+.animate-fade-in { animation: fade-in 1s ease-out 0.5s forwards; opacity: 0; }
+
+
+/* Efek latar belakang aurora */
+.aurora-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(at 20% 25%, hsla(212,90%,50%,0.2) 0px, transparent 50%),
+        radial-gradient(at 80% 20%, hsla(288,80%,50%,0.15) 0px, transparent 50%),
+        radial-gradient(at 25% 80%, hsla(180,90%,60%,0.25) 0px, transparent 50%),
+        radial-gradient(at 75% 75%, hsla(340,90%,60%,0.15) 0px, transparent 50%);
+    filter: blur(100px);
+    z-index: 0;
+}
+
+/* Gaya untuk kartu dengan efek kaca */
+.glass-card {
+    background-color: rgba(22, 27, 34, 0.5);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.45);
+}
+
+/* Kartu Fitur */
+.feature-card {
+    background-color: rgba(22, 27, 34, 0.7);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.feature-card:hover {
+    transform: scale(1.05);
+    border-color: rgba(34, 211, 238, 0.5);
+}
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+/* Gaya untuk tab navigasi */
+.tab-button {
+    padding: 12px 24px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    color: #9ca3af;
+    font-family: 'Roboto Mono', monospace;
+}
+.tab-button:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.tab-button.active {
+    color: #22d3ee;
+    border-bottom-color: #22d3ee;
+}
+
+/* Gaya untuk input field */
+.input-field {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #374151;
+    border-radius: 0.5rem;
+    background-color: rgba(17, 24, 39, 0.8);
+    color: #d1d5db;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Roboto Mono', monospace;
+    resize: none;
+}
+.input-field:focus {
+    outline: none;
+    border-color: #22d3ee;
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.2);
+}
+
+/* Gaya untuk Output field dan tombol salin */
+.output-label {
+    position: absolute;
+    top: -0.6rem;
+    left: 0.75rem;
+    background-color: #1e293b; 
+    padding: 0 0.25rem;
+    font-size: 0.75rem;
+    color: #9ca3af;
+    font-family: 'Roboto Mono', monospace;
+}
+.output-field {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #4b5563;
+    border-radius: 0.5rem;
+    background-color: #111827;
+    color: #e5e7eb;
+    font-family: 'Roboto Mono', monospace;
+    resize: none;
+}
+.copy-btn {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    color: #9ca3af;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    transition: color 0.2s, background-color 0.2s;
+}
+.copy-btn:hover {
+    color: #ffffff;
+    background-color: #374151;
+}
+
+/* Tombol Tampilkan/Sembunyikan Kata Sandi */
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.password-toggle:hover {
+    color: #ffffff;
+}
+
+/* Gaya untuk tombol */
+.btn {
+    width: 100%;
+    font-weight: 700;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+.btn-primary {
+    background: linear-gradient(to right, #22d3ee, #0ea5e9);
+    color: #0f172a;
+    box-shadow: 0 4px 15px 0 rgba(34, 211, 238, 0.3);
+}
+.btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px 0 rgba(34, 211, 238, 0.4);
+}
+.btn-secondary {
+    background: linear-gradient(to right, #ec4899, #d946ef);
+    color: #ffffff;
+    box-shadow: 0 4px 15px 0 rgba(236, 72, 153, 0.3);
+}
+.btn-secondary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px 0 rgba(236, 72, 153, 0.4);
+}
+.btn-clear {
+    background-color: transparent;
+    border-color: #4b5563;
+    color: #9ca3af;
+}
+.btn-clear:hover {
+    background-color: #374151;
+    color: #ffffff;
+    border-color: #6b7280;
+}
+
+/* Spinner untuk Tombol */
+.btn-spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+.btn-primary .btn-spinner {
+    border: 3px solid rgba(15, 23, 42, 0.2);
+    border-top-color: #0f172a;
+}
+.btn-secondary .btn-spinner {
+     border-top-color: #ffffff;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
